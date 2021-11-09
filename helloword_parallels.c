@@ -4,9 +4,10 @@
 int main()
 {
   #pragma omp parallel
-  { // begins parallel region
+  {
     int ID = omp_get_thread_num();
     printf("hello(%d)\n", ID);
     printf("world(%d)\n", ID);
-  }  // barrier that ends parallel region
+  }  
+  // barrier
 }
